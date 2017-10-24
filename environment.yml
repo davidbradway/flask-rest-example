@@ -1,0 +1,10 @@
+name: my_flask_env
+dependencies:
+  - python=3.6
+  - numpy
+  - ipython
+  - pytest
+  - pytest-cov
+  - pytest-pep8
+  - pytest-flask
+  - Flask
