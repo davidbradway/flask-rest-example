@@ -27,13 +27,21 @@
 
 ### Setup Environment
 
+    # First time setup
     conda create -n my_flask_env
     activate my_flask_env
+    #conda install stuff
     pip install -r requirements.txt
+    conda env export > environment.yml
+
+    # Subsequent times...
+    conda env create -f environment.yml
+
     # windows
     set FLASK_APP=main.py
     # linux 
     export FLASK_APP=main.py
+
     flask run --host 0.0.0.0
     #http://localhost:5000/api/hello/david
     #http://localhost:5000/api/data
