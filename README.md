@@ -30,8 +30,11 @@
     conda create -n my_flask_env
     activate my_flask_env
     pip install -r requirements.txt
+    # windows
     set FLASK_APP=main.py
-    flask run
+    # linux 
+    export FLASK_APP=main.py
+    flask run --host 0.0.0.0
     #http://localhost:5000/api/hello/david
     #http://localhost:5000/api/data
     # Test http://localhost:5000/api/add via PUT request using Postman Chrome App with json data {'a':1, 'b':2}
