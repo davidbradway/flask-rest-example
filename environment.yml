@@ -4,7 +4,4 @@ dependencies:
   - numpy
   - ipython
   - pytest
-  - pytest-cov
-  - pytest-pep8
-  - pytest-flask
   - Flask
