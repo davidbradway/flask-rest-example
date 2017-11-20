@@ -1,6 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, url_for
 import numbers
 app = Flask(__name__)
+
+
+@app.route('/d3')
+def show_entries():
+    return render_template('index.html')
 
 
 @app.route("/api/hello/<name>", methods=['GET'])
